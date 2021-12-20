@@ -14,7 +14,7 @@ echo -e "\e[31mLet's Continue\e[0m"
 
 
 Name=(Ashutosh Asima Taliban)
-echo "$ Name [0]";
+echo "${Name [0]}"
 echo "$ Name [1]";
 echo "$ Name [2]";
 echo  "The name of the First Person is ${Name [0]} and Second Person is ${Name [0]},Against of ${Name [0]}"
