@@ -12,7 +12,7 @@ echo -e "\e[31mLet's Continue\e[0m"
 
 ## Array
 
-Name=('Ashutosh' 'Asima' 'Taliban')
+Name=("Ashutosh" "Asima" "Taliban")
 
 echo -e "The name of the First Person is ${Name [0]} and Second Person is ${Name[1]},Against of ${Name[2]}"
 
