@@ -14,6 +14,7 @@ echo -e "\e[31mLet's Continue\e[0m"
 
 
 Name=(ashutosh asima taliban)
+
 # shellcheck disable=SC2086
 echo ${Name[0]}
 echo ${Name[1]}
