@@ -1,7 +1,9 @@
 ##Makefile is simple task, where it runs some commands in the background
-One:
+Help:
+	@grep '####' Makefile | grep -v grep | sed -e 's/####//'
+One: #### Target One
 	@echo Ashu
-Two:
+Two: #### Target Two
 	@echo Chibu
 
 
