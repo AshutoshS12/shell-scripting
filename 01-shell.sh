@@ -27,6 +27,11 @@ read -p 'Enter your Name: ' FullName
 
 echo -e "$FullName is a good boy"
 
+## Mailx command
+
+## mailx -s Hello saras_ashu@outlook.com
+
+
 
 
 
