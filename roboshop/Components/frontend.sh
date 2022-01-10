@@ -1,20 +1,16 @@
 
- Print() {
-   echo -e "\e[1m$1\e[0m"
-   echo -e "\n\e[31m=================$1=================\e[0m" >> $LOG
-}
-
- LOG=/tmp/roboshop.log
- rm -f $LOG
-
+ source Components/common.sh
  Print "Installing Nginx"
  yum install nginx -y &>>$LOG
+ Stat $?
 
  Print "Enabling Nginx"
  systemctl enable nginx
+ Stat $?
 
  Print "Starting Nginx"
  systemctl start nginx
+ Stat $?
 
  curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 
@@ -28,3 +24,4 @@
  rm -rf frontend-master static README.md
  mv localhost.conf /etc/nginx/default.d/roboshop.conf
  systemctl restart nginx
+ }
